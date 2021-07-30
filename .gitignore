@@ -1,6 +1,8 @@
 # Repo-specific
 data/masks/*
 .vscode*
+.DS_Store
+notebooks/generative_inpainting
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
