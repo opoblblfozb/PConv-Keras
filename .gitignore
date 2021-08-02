@@ -1,3 +1,6 @@
+# nonaka_weight
+pretrained/
+
 # Repo-specific
 data/masks/*
 .vscode*
