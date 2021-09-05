@@ -268,7 +268,8 @@ class PConvUnet(object):
         epoch = int(os.path.basename(filepath).split('.')[1].split('-')[0])
         assert epoch > 0, "Could not parse weight file. Should include the epoch"
         self.current_epoch = epoch
-        self.model.load_weights(filepath)        
+        self.model.load_weights(filepath)
+        self.model._make_predict_function()
 
     @staticmethod
     def PSNR(y_true, y_pred):
